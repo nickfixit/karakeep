@@ -44,6 +44,7 @@ machine learning is:fav`),
   async ({ query, limit, nextCursor }): Promise<CallToolResult> => {
     const res = await karakeepClient.GET("/bookmarks/search", {
       params: {
+        path:  {},
         query: {
           q: query,
           limit: limit,
